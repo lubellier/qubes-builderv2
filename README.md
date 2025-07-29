@@ -338,7 +338,13 @@ other method that a user would use, we keep it as dedicated call.
 
 ### Template
 
-Similarly, you can start building the templates defined in this development
+First, you should fetch the template builder package (defined in this development configuration, ex: `builder-debian`) to `artifacts/source/` with:
+
+```bash
+$ ./qb package -c builder-debian fetch
+```
+
+Then similarly, you can start building the templates defined in this development
 configuration with:
 
 ```bash
